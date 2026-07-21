@@ -429,6 +429,28 @@ em {
 }
 
 /* ========================================
+   VIDEO PROMOCIONAL
+======================================== */
+
+.video-promocional {
+    padding: 100px 8%;
+    text-align: center;
+    background: #F8F8F8;
+}
+
+.video-promocional h2 {
+    margin: 15px 0 40px;
+}
+
+.video-promocional video {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px #00000033;
+}
+
+
+/* ========================================
    8. CONTACTO Y PIE DE PÁGINA
 ======================================== */
 .contacto {

@@ -1,0 +1,567 @@
+/* ========================================
+   1. CONFIGURACIÓN GENERAL
+======================================== */
+:root {
+    --verde-oscuro: #082a2d;
+    --verde: #0f5a53;
+    --verde-claro: #c9d86a;
+    --crema: #f4f0e7;
+    --blanco: #ffffff;
+    --gris: #667473;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #faf8f3;
+    color: var(--verde-oscuro);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: normal;
+}
+
+h2 {
+    margin-bottom: 35px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+em {
+    color: var(--verde-claro);
+    font-weight: normal;
+}
+
+.seccion {
+    padding: 110px 8%;
+}
+
+.etiqueta {
+    color: var(--verde);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.etiqueta-clara {
+    color: var(--verde-claro);
+}
+
+/* ========================================
+   2. ENCABEZADO
+======================================== */
+.encabezado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    height: 90px;
+    padding: 0 6%;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--blanco);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.logo span {
+    color: var(--verde-claro);
+}
+
+.menu {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    color: var(--verde-claro);
+}
+
+.boton-contacto {
+    padding: 15px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.boton-menu {
+    display: none;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ========================================
+   3. PORTADA PRINCIPAL
+======================================== */
+.portada {
+    position: relative;
+    display: flex;
+    min-height: 760px;
+    height: 100vh;
+    padding: 130px 8% 170px;
+    align-items: center;
+    color: var(--blanco);
+    background-image: url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=2000&q=85");
+    background-position: center;
+    background-size: cover;
+}
+
+.capa-oscura {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(5, 35, 38, 0.82),
+        rgba(5, 35, 38, 0.15)
+    );
+}
+
+.contenido-portada {
+    position: relative;
+    z-index: 1;
+    max-width: 750px;
+}
+
+.subtitulo {
+    color: #e9edc2;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.contenido-portada h1 {
+    margin: 25px 0;
+    font-size: 95px;
+    line-height: 0.9;
+}
+
+.descripcion-portada {
+    max-width: 520px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* ========================================
+   4. BUSCADOR
+======================================== */
+.buscador {
+    position: absolute;
+    right: 6%;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    width: 650px;
+    min-height: 105px;
+    padding: 18px 18px 18px 30px;
+    align-items: center;
+    gap: 20px;
+    color: var(--verde-oscuro);
+    background: var(--blanco);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.buscador div {
+    flex: 1;
+}
+
+.buscador label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--gris);
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.buscador input {
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.buscador button {
+    align-self: stretch;
+    padding: 0 30px;
+    color: var(--blanco);
+    background: var(--verde);
+    border: none;
+    cursor: pointer;
+}
+
+.buscador button:hover {
+    background: var(--verde-oscuro);
+}
+
+.resultado {
+    position: absolute;
+    right: 0;
+    bottom: -38px;
+    display: none;
+    margin: 0;
+    padding: 10px 15px;
+    color: var(--verde-oscuro);
+    background: var(--verde-claro);
+    font-size: 12px;
+}
+
+/* ========================================
+   5. NOSOTROS
+======================================== */
+.nosotros {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 90px;
+    align-items: end;
+}
+
+.nosotros h2 em,
+.experiencias h2 em {
+    color: var(--verde);
+}
+
+.texto-nosotros {
+    max-width: 430px;
+    color: var(--gris);
+    line-height: 1.8;
+}
+
+.texto-nosotros a {
+    display: inline-block;
+    margin-top: 20px;
+    padding-bottom: 8px;
+    color: var(--verde);
+    border-bottom: 1px solid var(--verde);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* ========================================
+   6. EXPERIENCIAS
+======================================== */
+.experiencias {
+    background: var(--crema);
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 60px;
+    border-top: 1px solid #c4c8bf;
+}
+
+.tarjeta-experiencia {
+    position: relative;
+    min-height: 340px;
+    padding: 35px 28px;
+    border-right: 1px solid #c4c8bf;
+    transition: 0.3s;
+}
+
+.tarjeta-experiencia:first-child {
+    border-left: 1px solid #c4c8bf;
+}
+
+.tarjeta-experiencia:hover {
+    color: var(--blanco);
+    background: var(--verde);
+    transform: translateY(-8px);
+}
+
+.icono {
+    display: block;
+    margin: 25px 0 45px;
+    color: var(--verde);
+    font-size: 55px;
+}
+
+.tarjeta-experiencia:hover .icono {
+    color: var(--verde-claro);
+}
+
+.tarjeta-experiencia h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 26px;
+    font-weight: normal;
+}
+
+.tarjeta-experiencia p {
+    color: var(--gris);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.tarjeta-experiencia:hover p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.tarjeta-experiencia a {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* ========================================
+   7. DESTINOS
+======================================== */
+.destinos {
+    color: var(--blanco);
+    background: var(--verde-oscuro);
+}
+
+.contenedor-destinos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 60px;
+}
+
+.tarjeta-destino {
+    position: relative;
+    display: flex;
+    min-height: 500px;
+    padding: 30px;
+    align-items: end;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.tarjeta-destino::before {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(transparent 35%, rgba(5, 30, 32, 0.9));
+}
+
+.tarjeta-destino:hover {
+    transform: translateY(-8px);
+}
+
+.tarjeta-destino div {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.tarjeta-destino p {
+    color: var(--verde-claro);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.tarjeta-destino h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.tarjeta-destino a {
+    display: block;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 11px;
+}
+
+.machu-picchu {
+    background-image: url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1000&q=85");
+}
+
+.colca {
+    background-image: url("https://images.unsplash.com/photo-1531968455001-5c5272a41129?auto=format&fit=crop&w=1000&q=85");
+}
+
+.amazonia {
+    background-image: url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=85");
+}
+
+/* ========================================
+   8. CONTACTO Y PIE DE PÁGINA
+======================================== */
+.contacto {
+    padding: 120px 20px;
+    color: var(--blanco);
+    text-align: center;
+    background:
+        linear-gradient(rgba(5, 35, 38, 0.85), rgba(5, 35, 38, 0.85)),
+        url("https://images.unsplash.com/photo-1518602164578-cd0074062767?auto=format&fit=crop&w=1800&q=85") center/cover;
+}
+
+.contacto h2 {
+    font-size: 75px;
+}
+
+.contacto > a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 18px 28px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.contacto > a:hover {
+    color: var(--verde-oscuro);
+    background: var(--blanco);
+}
+
+.pie-pagina {
+    display: flex;
+    padding: 45px 8%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    color: rgba(255, 255, 255, 0.7);
+    background: #061f22;
+    font-size: 12px;
+}
+
+/* ========================================
+   9. DISEÑO PARA TABLETAS Y CELULARES
+======================================== */
+@media (max-width: 850px) {
+    h2 {
+        font-size: 48px;
+    }
+
+    .encabezado {
+        height: 75px;
+        padding: 0 25px;
+    }
+
+    .boton-menu {
+        position: relative;
+        z-index: 12;
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: none;
+        padding: 90px 30px 35px;
+        flex-direction: column;
+        align-items: stretch;
+        background: var(--verde-oscuro);
+    }
+
+    /* JavaScript agrega esta clase cuando presionamos el botón */
+    .menu.menu-visible {
+        display: flex;
+    }
+
+    .portada {
+        min-height: 760px;
+        height: 100vh;
+        padding: 120px 25px 170px;
+        background-position: 62% center;
+    }
+
+    .contenido-portada h1 {
+        font-size: 65px;
+    }
+
+    .descripcion-portada {
+        font-size: 14px;
+    }
+
+    .buscador {
+        right: 20px;
+        left: 20px;
+        width: auto;
+        padding-left: 20px;
+    }
+
+    .buscador button {
+        padding: 0 18px;
+    }
+
+    .nosotros {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contenedor-destinos {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-destino {
+        min-height: 440px;
+    }
+
+    .contacto h2 {
+        font-size: 55px;
+    }
+
+    .pie-pagina {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 500px) {
+    .seccion {
+        padding: 80px 24px;
+    }
+
+    .contenido-portada h1 {
+        font-size: 54px;
+    }
+
+    .buscador label {
+        display: none;
+    }
+
+    .buscador input {
+        font-size: 12px;
+    }
+
+    .contenedor-tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjeta-experiencia {
+        min-height: 280px;
+        border-left: 1px solid #c4c8bf;
+        border-bottom: 1px solid #c4c8bf;
+    }
+}

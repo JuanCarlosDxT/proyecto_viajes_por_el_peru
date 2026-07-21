@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andes Vivo | Viajes por el Perú</title>
+
+    <!-- Conectamos el archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO Y MENÚ DE NAVEGACIÓN -->
+    <header class="encabezado">
+        <a href="#inicio" class="logo">ANDES<span>VIVO</span></a>
+
+        <!-- Este botón aparece solamente en celulares -->
+        <button class="boton-menu" id="boton-menu" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <nav class="menu" id="menu">
+            <a href="#experiencias">Experiencias</a>
+            <a href="#destinos">Destinos</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto" class="boton-contacto">Diseña tu viaje</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PORTADA PRINCIPAL -->
+        <section class="portada" id="inicio">
+            <div class="capa-oscura"></div>
+
+            <div class="contenido-portada">
+                <p class="subtitulo">PERÚ, EXTRAORDINARIO POR NATURALEZA</p>
+                <h1>Viajes que<br>se quedan <em>contigo.</em></h1>
+                <p class="descripcion-portada">
+                    Creamos experiencias auténticas para descubrir el Perú
+                    de la mano de quienes mejor lo conocen.
+                </p>
+            </div>
+
+            <!-- BUSCADOR -->
+            <form class="buscador" id="formulario-busqueda">
+                <div>
+                    <label for="busqueda">¿A dónde te gustaría ir?</label>
+                    <input
+                        type="text"
+                        id="busqueda"
+                        placeholder="Cusco, Amazonía, Arequipa..."
+                    >
+                </div>
+                <button type="submit">EXPLORAR →</button>
+                <p id="resultado-busqueda" class="resultado"></p>
+            </form>
+        </section>
+
+        <!-- SECCIÓN NOSOTROS -->
+        <section class="nosotros seccion" id="nosotros">
+            <div>
+                <p class="etiqueta">NUESTRA MANERA DE VIAJAR</p>
+                <h2>El Perú no se visita.<br><em>Se vive.</em></h2>
+            </div>
+
+            <div class="texto-nosotros">
+                <p>
+                    Cada viaje nace de una conversación. Escuchamos lo que te
+                    inspira y diseñamos una ruta que conecta paisajes, personas
+                    y momentos inolvidables.
+                </p>
+                <a href="#experiencias">CONOCE NUESTRA ESENCIA →</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN EXPERIENCIAS -->
+        <section class="experiencias seccion" id="experiencias">
+            <p class="etiqueta">VIAJA SEGÚN LO QUE AMAS</p>
+            <h2>Encuentra tu <em>experiencia.</em></h2>
+
+            <div class="contenedor-tarjetas">
+                <article class="tarjeta-experiencia">
+                    <span class="icono">⛰</span>
+                    <h3>Aventura</h3>
+                    <p>Caminos incas, montañas y rutas que despiertan tus sentidos.</p>
+                    <a href="#destinos">Ver destinos ↗</a>
+                </article>
+
+                <article class="tarjeta-experiencia">
+                    <span class="icono">✦</span>
+                    <h3>Cultura</h3>
+                    <p>Historias vivas, ciudades antiguas y comunidades inolvidables.</p>
+                    <a href="#destinos">Ver destinos ↗</a>
+                </article>
+
+                <article class="tarjeta-experiencia">
+                    <span class="icono">◉</span>
+                    <h3>Gastronomía</h3>
+                    <p>Sabores peruanos, mercados tradicionales y nuevas experiencias.</p>
+                    <a href="#destinos">Ver destinos ↗</a>
+                </article>
+
+                <article class="tarjeta-experiencia">
+                    <span class="icono">≈</span>
+                    <h3>Naturaleza</h3>
+                    <p>Amazonía, costa y Andes en experiencias responsables.</p>
+                    <a href="#destinos">Ver destinos ↗</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DESTINOS -->
+        <section class="destinos seccion" id="destinos">
+            <p class="etiqueta etiqueta-clara">PEQUEÑOS MUNDOS, UN GRAN PAÍS</p>
+            <h2>Destinos que <em>inspiran.</em></h2>
+
+            <div class="contenedor-destinos">
+                <article class="tarjeta-destino machu-picchu">
+                    <div>
+                        <p>CUSCO · HISTORIA VIVA</p>
+                        <h3>Cusco y Machu Picchu</h3>
+                        <a href="#contacto">EXPLORAR ↗</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destino colca">
+                    <div>
+                        <p>AREQUIPA · NATURALEZA</p>
+                        <h3>Cañón del Colca</h3>
+                        <a href="#contacto">EXPLORAR ↗</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-destino amazonia">
+                    <div>
+                        <p>LORETO · EXPEDICIÓN</p>
+                        <h3>Amazonía peruana</h3>
+                        <a href="#contacto">EXPLORAR ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE CONTACTO -->
+        <section class="contacto" id="contacto">
+            <p class="etiqueta etiqueta-clara">TU PRÓXIMA HISTORIA COMIENZA AQUÍ</p>
+            <h2>¿Listo para vivir<br><em>tu propio Perú?</em></h2>
+
+            <!-- Cambia este correo electrónico por el tuyo -->
+            <a href="mailto:ejemplo@gmail.com">CONVERSEMOS ↗</a>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <p class="logo">ANDES<span>VIVO</span></p>
+        <p>Página académica sobre turismo en el Perú.</p>
+        <p>© 2026 Grupo 3</p>
+        <p>Proyecto académico del instituto ISAM</p>
+    </footer>
+
+    <!-- Conectamos el archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

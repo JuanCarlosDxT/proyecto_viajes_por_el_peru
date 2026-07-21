@@ -43,3 +43,33 @@ formulario.addEventListener("submit", function (evento) {
         resultado.textContent = "Buscando experiencias en: " + destino;
     }
 });
+
+
+/* ========================================
+   CAMBIO AUTOMÁTICO DE LA PORTADA
+======================================== */
+
+const portada = document.querySelector(".portada");
+
+const imagenes = [
+    "imagenes/cusco.png",
+    "imagenes/iquitos.png",
+    "imagenes/huascaran.png",
+    "imagenes/castillo_de_chancay.png",
+    "imagenes/huacachina.png",
+    "imagenes/punta_sal.png"
+];
+
+let indice = 0;
+
+setInterval(function () {
+
+    indice++;
+
+    if (indice >= imagenes.length) {
+        indice = 0;
+    }
+
+    portada.style.backgroundImage = `url('${imagenes[indice]}')`;
+
+}, 5000);

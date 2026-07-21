@@ -97,29 +97,38 @@ em {
     color: var(--verde-claro);
 }
 
+/* Menú de navegación */
 .menu {
     display: flex;
-    gap: 35px;
+    gap: 35px;      /* Espacio entre enlaces */  
     align-items: center;
     font-size: 14px;
 }
 
+/* Estilo general de todos los enlaces */
+.menu a {
+    padding: 12px 18px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
 .menu a:hover {
-    color: var(--verde-claro);
+    color: #75c459;
 }
 
-.boton-contacto {
-    padding: 15px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.7);
+/* Botones del menú */
+.boton-contacto,
+.boton-iniciar-sesion {
+    border: 1px solid #FFFFFFB3;
+    border-radius: 6px;
 }
 
-.boton-menu {
-    display: none;
-    color: white;
-    background: transparent;
-    border: none;
-    font-size: 30px;
-    cursor: pointer;
+/* Hover de los botones */
+.boton-contacto:hover,
+.boton-iniciar-sesion:hover {
+    background: #EEF6EB;
+    color: #4F6F52;
+    border-color: #A8C69F;
 }
 
 /* ========================================

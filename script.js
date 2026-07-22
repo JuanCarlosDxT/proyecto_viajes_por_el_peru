@@ -57,7 +57,9 @@ const imagenes = [
     "imagenes/huascaran.png",
     "imagenes/castillo_de_chancay.png",
     "imagenes/huacachina.png",
-    "imagenes/punta_sal.png"
+    "imagenes/punta_sal.png",
+    "imagenes/oxapampa.png",
+    "imagenes/pozuzo.png",
 ];
 
 let indice = 0;

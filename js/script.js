@@ -61,6 +61,7 @@ const imagenes = [
     "imagenes/punta_sal.png",
     "imagenes/oxapampa.png",
     "imagenes/pozuzo.png",
+    "imagenes/caballococha.png",
     "imagenes/castillo_de_chancay.png",
     "imagenes/plaza_mayor_de_lima.png",
     "imagenes/iquitos.png",

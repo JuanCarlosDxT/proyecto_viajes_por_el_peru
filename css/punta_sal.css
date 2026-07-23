@@ -64,7 +64,7 @@
                     rgba(4, 30, 32, 0.15),
                     rgba(4, 30, 32, 0.9)
                 ),
-                url("imagenes/punta_sal.png");
+                url("../imagenes/punta_sal.png");
 
             background-position: center;
             background-size: cover;

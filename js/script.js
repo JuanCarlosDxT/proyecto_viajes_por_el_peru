@@ -56,11 +56,12 @@ formulario.addEventListener("submit", function (evento) {
 const portada = document.querySelector(".portada");
 
 const imagenes = [
-    "Imagenes/cusco.png",
-    "Imagenes/huascaran.png",
-    "Imagenes/puntasal.png",
-    "Imagenes/oxapampa.png",
-    "Imagenes/pozuzo.png"
+    "imagenes/cusco.png",
+    "imagenes/huascaran.png",
+    "imagenes/punta_sal.png",
+    "imagenes/oxapampa.png",
+    "imagenes/pozuzo.png",
+    "imagenes/castillo_de_chancay.png",
 ];
 
 let indice = 0;

@@ -60,6 +60,7 @@ const imagenes = [
     "imagenes/punta_sal.png",
     "imagenes/oxapampa.png",
     "imagenes/pozuzo.png",
+    "imagenes/caballococha.png",
 ];
 
 let indice = 0;

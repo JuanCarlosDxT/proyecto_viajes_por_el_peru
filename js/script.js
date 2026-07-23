@@ -3,6 +3,7 @@ const botonMenu = document.getElementById("boton-menu");
 const menu = document.getElementById("menu");
 
 // Mostramos u ocultamos el menú.
+if (botonMenu && menu) {
 botonMenu.addEventListener("click", function () {
     menu.classList.toggle("menu-visible");
 
@@ -22,12 +23,13 @@ enlacesMenu.forEach(function (enlace) {
         botonMenu.textContent = "☰";
     });
 });
-
+}
 // BUSCADOR DE DESTINOS
 const formulario = document.getElementById("formulario-busqueda");
 const campoBusqueda = document.getElementById("busqueda");
 const resultado = document.getElementById("resultado-busqueda");
 
+if (formulario && campoBusqueda) {
 formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
 
@@ -38,8 +40,28 @@ formulario.addEventListener("submit", function (evento) {
         return;
     }
 
-    if (destino === "punta sal" || destino === "puntasal") {
+    if (destino === "punta sal" || destino === "puntasal" || destino === "tumbes") {
         window.location.href = "punta_sal.html";
+        return;
+    }
+
+    if (destino === "lima") {
+        window.location.href = "lima.html";
+        return;
+    }
+
+    if (destino === "caballococha" || destino === "caballo cocha") {
+        window.location.href = "caballococha.html";
+        return;
+    }
+
+    if (destino === "oxapampa") {
+        window.location.href = "oxapampa.html";
+        return;
+    }
+
+    if (destino === "pozuzo") {
+        window.location.href = "pozuzo.html";
         return;
     }
 
@@ -51,6 +73,7 @@ formulario.addEventListener("submit", function (evento) {
         resultado.textContent = "Destino no disponible.";
     }
 });
+}
 /* CAMBIO AUTOMÁTICO DE LA PORTADA */
 
 const portada = document.querySelector(".portada");
@@ -67,6 +90,7 @@ const imagenes = [
     "imagenes/iquitos.png",
 ];
 
+if (portada) {
 let indice = 0;
 
 setInterval(function () {
@@ -79,3 +103,4 @@ setInterval(function () {
     portada.style.backgroundImage =
         `url('${imagenes[indice]}')`;
 }, 5000);
+}

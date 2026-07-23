@@ -62,6 +62,8 @@ const imagenes = [
     "imagenes/oxapampa.png",
     "imagenes/pozuzo.png",
     "imagenes/castillo_de_chancay.png",
+    "imagenes/plaza_mayor_de_lima.png",
+    "imagenes/iquitos.png",
 ];
 
 let indice = 0;

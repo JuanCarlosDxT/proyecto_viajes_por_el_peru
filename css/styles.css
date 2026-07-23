@@ -416,6 +416,10 @@ em {
     font-size: 11px;
 }
 
+.lima {
+    background-image: url("../imagenes/plaza_mayor_de_lima.png");
+}
+
 .machu-picchu {
     background-image: url("https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=1000&q=85");
 }
@@ -428,13 +432,13 @@ em {
     background-image: url("https://cdn.britannica.com/37/267037-004-CA559DBC/iquitos-peru-matriz-church-plaza-de-armas.jpg");
 }
 .oxapampa {
-    background-image: url("Imagenes/oxapampa.png");
+    background-image: url("../imagenes/oxapampa.png");
 }
 .pozuzo {
-    background-image: url("Imagenes/pozuzo.png");
+    background-image: url("../imagenes/pozuzo.png");
 }
 .puntasal {
-    background-image: url("Imagenes/puntasal.png");
+    background-image: url("../imagenes/punta_sal.png");
 }
 /* ========================================
    VIDEO PROMOCIONAL

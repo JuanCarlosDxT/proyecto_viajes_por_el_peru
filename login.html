@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Iniciar sesión | Explora Perú</title>
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <a href="index.html" class="logo">
+            EXPLORA<span>PERÚ</span>
+        </a>
+
+        <a href="index.html" class="regresar">
+            ← VOLVER AL INICIO
+        </a>
+
+    </header>
+
+    <main>
+
+        <!-- INICIO DE SESIÓN -->
+        <section class="login">
+
+            <div class="contenedor-login">
+
+                <p class="etiqueta">
+                    EXPLORA PERÚ
+                </p>
+
+                <h1>Iniciar sesión</h1>
+
+                <p class="descripcion">
+                    Accede a tu cuenta para guardar destinos favoritos,
+                    diseñar tus viajes y disfrutar de nuevas funciones.
+                </p>
+
+                <form id="formLogin">
+
+                    <!-- Correo -->
+                    <div class="campo">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="correo@ejemplo.com"
+                            required>
+
+                    </div>
+
+                    <!-- Contraseña -->
+                    <div class="campo">
+
+                        <label for="password">
+                            Contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="••••••••"
+                            required>
+
+                    </div>
+
+                    <button type="submit">
+                        Iniciar sesión
+                    </button>
+
+                </form>
+
+                <div class="opciones">
+
+                    <a href="#">
+                        ¿Olvidaste tu contraseña?
+                    </a>
+
+                    <p>
+                        ¿No tienes una cuenta?
+                        <a href="registro.html">
+                            Regístrate
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <p>
+            © 2026 Explora Perú · Proyecto académico
+            <strong>ISAM</strong>
+        </p>
+
+        <p>
+            <strong>Alumno:</strong> Juan Carlos Diestra Trujillo
+        </p>
+
+    </footer>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>

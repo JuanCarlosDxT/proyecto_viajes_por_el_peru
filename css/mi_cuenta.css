@@ -1,0 +1,457 @@
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#f3f0e8;
+    color:#0a292c;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+a{
+
+    color:inherit;
+    text-decoration:none;
+
+}
+
+/* ================================
+   ENCABEZADO
+================================ */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 7%;
+
+    background:#082a2d;
+    color:white;
+
+}
+
+.logo{
+
+    font-size:20px;
+    font-weight:bold;
+    letter-spacing:3px;
+
+}
+
+.logo span{
+
+    color:#c9d86a;
+
+}
+
+.regresar{
+
+    padding:12px 18px;
+
+    border:1px solid rgba(255,255,255,.7);
+
+    font-size:12px;
+
+    transition:.3s;
+
+}
+
+.regresar:hover{
+
+    background:white;
+    color:#082a2d;
+
+}
+
+/* ================================
+   PERFIL
+================================ */
+
+.perfil{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:80px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(8,42,45,.55),
+            rgba(8,42,45,.55)
+        ),
+        url("../imagenes/costa_verde.png");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+.contenedor-perfil{
+
+    width:100%;
+    max-width:1000px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+
+    padding:45px;
+
+    border-radius:10px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.20);
+
+}
+
+/* ================================
+   CABECERA
+================================ */
+
+.cabecera-perfil{
+
+    display:flex;
+    align-items:center;
+    gap:30px;
+
+    margin-bottom:45px;
+
+}
+
+.foto-perfil{
+
+    width:140px;
+    height:140px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #0f5a53;
+
+}
+
+.etiqueta{
+
+    color:#0f5a53;
+
+    font-size:11px;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+}
+
+h1{
+
+    margin:12px 0;
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:50px;
+
+    font-weight:normal;
+
+}
+
+.correo{
+
+    color:#617170;
+
+    font-size:17px;
+
+}
+
+/* ================================
+   INFORMACIÓN
+================================ */
+
+.informacion{
+
+    margin-bottom:50px;
+
+}
+
+.informacion h2{
+
+    margin-bottom:25px;
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:36px;
+
+    font-weight:normal;
+
+}
+
+.datos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.dato{
+
+    padding:25px;
+
+    background:#f8f8f8;
+
+    border-left:5px solid #0f5a53;
+
+    border-radius:5px;
+
+}
+
+.dato span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    color:#617170;
+
+    font-size:13px;
+
+}
+
+.dato strong{
+
+    font-size:18px;
+
+}
+
+/* ================================
+   FAVORITOS
+================================ */
+
+.favoritos{
+
+    margin-bottom:50px;
+
+}
+
+.favoritos h2{
+
+    margin-bottom:25px;
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:36px;
+
+    font-weight:normal;
+
+}
+
+.tarjetas{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+.tarjeta{
+
+    overflow:hidden;
+
+    background:white;
+
+    border-radius:8px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+}
+
+.tarjeta:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.tarjeta img{
+
+    display:block;
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+.tarjeta h3{
+
+    padding:20px;
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:28px;
+
+    font-weight:normal;
+
+    text-align:center;
+
+}
+
+/* ================================
+   BOTONES
+================================ */
+
+.acciones{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.acciones button{
+
+    padding:16px 35px;
+
+    border:none;
+
+    background:#0f5a53;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.acciones button:hover{
+
+    background:#082a2d;
+
+}
+
+/* ================================
+   PIE DE PÁGINA
+================================ */
+
+footer{
+
+    padding:35px 8%;
+
+    background:#061f22;
+
+    color:rgba(255,255,255,.75);
+
+    text-align:center;
+
+    font-size:12px;
+
+    line-height:1.8;
+
+}
+
+footer strong{
+
+    color:#c9d86a;
+
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media(max-width:768px){
+
+    header{
+
+        padding:18px 22px;
+
+    }
+
+    .logo{
+
+        font-size:16px;
+
+    }
+
+    .regresar{
+
+        padding:10px;
+
+        font-size:10px;
+
+    }
+
+    .contenedor-perfil{
+
+        padding:30px 20px;
+
+    }
+
+    .cabecera-perfil{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    h1{
+
+        font-size:40px;
+
+    }
+
+    .informacion h2,
+    .favoritos h2{
+
+        font-size:30px;
+
+        text-align:center;
+
+    }
+
+    .acciones{
+
+        flex-direction:column;
+
+    }
+
+    .acciones button{
+
+        width:100%;
+
+    }
+
+}

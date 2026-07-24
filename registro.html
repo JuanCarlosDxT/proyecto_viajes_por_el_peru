@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear cuenta | Explora Perú</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/registro.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <a href="index.html" class="logo">
+            EXPLORA<span>PERÚ</span>
+        </a>
+
+        <a href="login.html" class="regresar">
+            ← REGRESAR
+        </a>
+
+    </header>
+
+    <main>
+
+        <!-- SECCIÓN DE REGISTRO -->
+
+        <section class="registro">
+
+            <div class="contenedor-registro">
+
+                <p class="etiqueta">
+                    CREA TU CUENTA
+                </p>
+
+                <h1>Únete a Explora Perú</h1>
+
+                <p class="descripcion">
+                    Regístrate para descubrir los mejores destinos turísticos
+                    del Perú y guardar tus lugares favoritos.
+                </p>
+
+                <form id="formRegistro">
+
+                    <div class="campo">
+
+                        <label for="nombre">
+                            Nombre completo
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            placeholder="Ingresa tu nombre completo"
+                            required>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="apellidos">
+                            Apellidos
+                        </label>
+
+                        <input
+                            type="text"
+                            id="apellidos"
+                            placeholder="Ingresa tus apellidos"
+                            required>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            placeholder="ejemplo@correo.com"
+                            required>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="password">
+                            Contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Mínimo 8 caracteres"
+                            required>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="confirmar">
+                            Confirmar contraseña
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmar"
+                            placeholder="Vuelve a escribir tu contraseña"
+                            required>
+
+                    </div>
+
+                    <div class="campo">
+
+                        <label for="departamento">
+                            Departamento
+                        </label>
+
+                        <select id="departamento" required>
+
+                            <option value="">
+                                Selecciona un departamento
+                            </option>
+
+                            <option>Amazonas</option>
+                            <option>Áncash</option>
+                            <option>Apurímac</option>
+                            <option>Arequipa</option>
+                            <option>Ayacucho</option>
+                            <option>Cajamarca</option>
+                            <option>Callao</option>
+                            <option>Cusco</option>
+                            <option>Huancavelica</option>
+                            <option>Huánuco</option>
+                            <option>Ica</option>
+                            <option>Junín</option>
+                            <option>La Libertad</option>
+                            <option>Lambayeque</option>
+                            <option>Lima</option>
+                            <option>Loreto</option>
+                            <option>Madre de Dios</option>
+                            <option>Moquegua</option>
+                            <option>Pasco</option>
+                            <option>Piura</option>
+                            <option>Puno</option>
+                            <option>San Martín</option>
+                            <option>Tacna</option>
+                            <option>Tumbes</option>
+                            <option>Ucayali</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="terminos">
+
+                        <input
+                            type="checkbox"
+                            id="acepto"
+                            required>
+
+                        <label for="acepto">
+                            Acepto los términos y condiciones de uso.
+                        </label>
+
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn-registro">
+
+                        CREAR CUENTA
+
+                    </button>
+
+                </form>
+
+                <p class="iniciar">
+
+                    ¿Ya tienes una cuenta?
+
+                    <a href="login.html">
+                        Inicia sesión aquí
+                    </a>
+
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            © 2026 Explora Perú · Proyecto académico
+            <strong>ISAM</strong>
+        </p>
+
+        <p>
+            Desarrollado por estudiantes del Instituto ISAM.
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="js/registro.js"></script>
+
+</body>
+</html>

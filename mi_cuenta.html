@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi cuenta | Explora Perú</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/mi_cuenta.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <a href="index.html" class="logo">
+            EXPLORA<span>PERÚ</span>
+        </a>
+
+        <a href="index.html" class="regresar">
+            ← VOLVER AL INICIO
+        </a>
+
+    </header>
+
+    <main>
+
+        <!-- PERFIL -->
+        <section class="perfil">
+
+            <div class="contenedor-perfil">
+
+                <div class="cabecera-perfil">
+
+                    <img
+                        src="imagenes/usuario.png"
+                        alt="Foto de perfil"
+                        class="foto-perfil">
+
+                    <div>
+
+                        <p class="etiqueta">
+                            MI CUENTA
+                        </p>
+
+                        <h1 id="nombreUsuario">
+                            Juan Carlos Diestra
+                        </h1>
+
+                        <p class="correo" id="correoUsuario">
+                            juan@correo.com
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- INFORMACIÓN -->
+
+                <section class="informacion">
+
+                    <h2>Información personal</h2>
+
+                    <div class="datos">
+
+                        <div class="dato">
+                            <span>Departamento</span>
+                            <strong id="departamentoUsuario">
+                                Lima
+                            </strong>
+                        </div>
+
+                        <div class="dato">
+                            <span>Estado de la cuenta</span>
+                            <strong>
+                                Activa
+                            </strong>
+                        </div>
+
+                        <div class="dato">
+                            <span>Miembro desde</span>
+                            <strong>
+                                Julio 2026
+                            </strong>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- FAVORITOS -->
+
+                <section class="favoritos">
+
+                    <h2>Destinos favoritos</h2>
+
+                    <div class="tarjetas">
+
+                        <article class="tarjeta">
+
+                            <img src="imagenes/plaza_mayor_de_lima.png"
+                                 alt="Lima">
+
+                            <h3>Lima</h3>
+
+                        </article>
+
+                        <article class="tarjeta">
+
+                            <img src="imagenes/punta_sal.png"
+                                 alt="Punta Sal">
+
+                            <h3>Punta Sal</h3>
+
+                        </article>
+
+                        <article class="tarjeta">
+
+                            <img src="imagenes/oxapampa.png"
+                                 alt="Oxapampa">
+
+                            <h3>Oxapampa</h3>
+
+                        </article>
+
+                    </div>
+
+                </section>
+
+                <!-- ACCIONES -->
+
+                <section class="acciones">
+
+                    <button id="editarPerfil">
+                        Editar perfil
+                    </button>
+
+                    <button id="cerrarSesion">
+                        Cerrar sesión
+                    </button>
+
+                </section>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+
+        <p>
+            © 2026 Explora Perú · Proyecto académico
+            <strong>ISAM</strong>
+        </p>
+
+        <p>
+            Desarrollado por estudiantes del Instituto ISAM.
+        </p>
+
+    </footer>
+
+    <script src="js/mi_cuenta.js"></script>
+
+</body>
+</html>

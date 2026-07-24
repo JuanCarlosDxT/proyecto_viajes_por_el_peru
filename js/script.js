@@ -35,13 +35,28 @@ formulario.addEventListener("submit", function (evento) {
 
     const destino = campoBusqueda.value.trim().toLowerCase();
 
+    if (destino === "ica") {
+        window.location.href = "ica.html";
+        return;
+    }
+
+    if (destino === "arequipa") {
+        window.location.href = "arequipa.html";
+        return;
+    }
+  
+    if (destino === "cusco") {
+        window.location.href = "cusco.html";
+        return;
+    }
+
     if (destino === "iquitos") {
         window.location.href = "iquitos.html";
         return;
     }
 
     if (destino === "punta sal" || destino === "puntasal" || destino === "tumbes") {
-        window.location.href = "punta_sal.html";
+        window.location.href = "tumbes.html";
         return;
     }
 
@@ -81,7 +96,7 @@ const portada = document.querySelector(".portada");
 const imagenes = [
     "imagenes/cusco.png",
     "imagenes/huascaran.png",
-    "imagenes/punta_sal.png",
+    "imagenes/tumbes.png",
     "imagenes/oxapampa.png",
     "imagenes/pozuzo.png",
     "imagenes/caballococha.png",

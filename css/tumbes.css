@@ -50,8 +50,8 @@
             background-color: white;
         }
 
-        /* PORTADA DE PUNTA SAL */
-        .portada-punta-sal {
+        /* PORTADA DE TUMBES */
+        .portada-tumbes {
             position: relative;
             display: flex;
             min-height: 570px;
@@ -64,7 +64,7 @@
                     rgba(4, 30, 32, 0.15),
                     rgba(4, 30, 32, 0.9)
                 ),
-                url("../imagenes/punta_sal.png");
+                url("../imagenes/tumbes.png");
 
             background-position: center;
             background-size: cover;
@@ -230,7 +230,7 @@
                 font-size: 10px;
             }
 
-            .portada-punta-sal {
+            .portada-tumbes {
                 min-height: 500px;
                 padding: 60px 25px;
             }
